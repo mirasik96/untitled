@@ -19,6 +19,11 @@ public class Test2 {
         students.add(st4);
         students.add(st5);
 
+        students.stream().map(student -> {student.setName(student.getName().toUpperCase()); return student;})
+                .filter(student -> student.getSex() == 'f')
+                .sorted((x,y) -> x.getAge() - y.getAge())
+                .forEach(System.out::println);
+
         students = students.stream().sorted((x,y) -> x.getName().compareTo(y.getName())).collect(Collectors.toList());
 
         students = students.stream().filter(element -> element.getAge() > 22 && element.getAvgGrade() < 7.2).collect(Collectors.toList());
