@@ -1,4 +1,4 @@
-package work_with_files.programmer1;
+package work_with_files._6programmer1;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

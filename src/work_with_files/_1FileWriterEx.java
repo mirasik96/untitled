@@ -3,7 +3,7 @@ package work_with_files;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class FileWriteEx {
+public class _1FileWriterEx {
     public static void main(String[] args) throws IOException {
         String rubai = "Madiyar 25 jas";
         String s = "privet";
